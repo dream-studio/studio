@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    
+    <com.dream.freightapp.app.ui.custom.PullToRefreshableView 
+        android:id="@+id/fragment_find_custom_pull_to_refresh_refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+		<!-- 
+    	<LinearLayout 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:orientation="horizontal"
+	   	    >
+	    	    
+	    	    <ImageView 
+	    	        android:id="@+id/fragment_find_imageview_search_icon"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:src="@drawable/ic_search"
+	    	        />
+	    	    
+	    	    <EditText 
+	    	        android:id="@+id/fragment_find_edittext_search_condition"
+	    	        android:layout_width="match_parent"
+	    	        android:layout_height="wrap_content"
+	    	        android:inputType="text"
+	    	        />
+	    	    
+	   	</LinearLayout> 
+         -->
+        <ListView
+            android:id="@+id/fragment_find_listview_datas"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+        </ListView>
+    </com.dream.freightapp.app.ui.custom.PullToRefreshableView>
+
+</RelativeLayout>

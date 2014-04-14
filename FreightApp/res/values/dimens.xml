@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_tab_space">0px</dimen> 
+    <dimen name="custom_find_listview_header_text_size">18sp</dimen>
+</resources>

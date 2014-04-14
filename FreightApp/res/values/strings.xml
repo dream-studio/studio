@@ -1,0 +1,80 @@
+<resources>
+
+    <string name="app_name">货运软件</string>
+
+    <!-- public -->
+    <string name="public_mark_across">-</string>
+    
+    <!-- ActionBar Title -->
+    <string name="title_not_set">没设置Title</string>
+    <string name="title_system_message">系统信息</string>
+    <string name="title_goods_message">货源信息</string>
+    <string name="title_transaction_message">交易信息</string>
+    <string name="title_issuance_path_message">发布路径信息</string>
+    <string name="title_integral_message">积分消费信息</string>
+    
+	<!-- ActionBarSherlock Menu -->
+	<string name="menu_back">返回</string>
+	<string name="menu_confirm">确认</string>
+    
+    <!-- Main Activity -->
+    <string name="activity_main_tab_home">主页</string>
+    <string name="activity_main_tab_find">找货源</string>
+    <string name="activity_main_tab_issuance_path">发布路径</string>
+    <string name="activity_main_tab_person_center">个人中心</string>
+    
+    <!-- Home Fragment -->
+    <string name="fragment_home_textview_goods_message">货源信息</string>
+    <string name="fragment_home_textview_transaction_message">交易记录</string>
+    <string name="fragment_home_textview_system_message">系统信息</string>
+    <string name="fragment_home_textview_issuance_path_message">发布路径记录</string>
+    <string name="fragment_home_textview_integral_message">积分消费记录</string>
+    
+    <!-- Person center Fragment -->
+    <string name="fragment_person_center_textview_owner_information">车主信息</string>
+    <string name="fragment_person_center_textview_car_information">货车信息</string>
+    <string name="fragment_person_center_textview_my_documents">我的证件</string>
+    <string name="fragment_person_center_textview_my_attention">我的关注</string>
+    <string name="fragment_person_center_textview_edit_password">修改密码</string>
+    <string name="fragment_person_center_textview_system_setting">系统设置</string>
+    <string name="fragment_person_center_button_logout">账号登出</string>
+    <string name="fragment_person_center_textview_title">个人中心</string>
+    
+    <!-- Sign in Activity -->
+    <string name="activity_sign_in_edittext_account">手机号码</string>
+    <string name="activity_sign_in_edittext_password">密  码</string>
+    <string name="activity_sign_in_button_sign_in">登  录</string>
+    <string name="activity_sign_in_button_sign_up">注  册</string>
+    <string name="activity_sign_in_textview_forgot_password">忘记密码?</string>
+    <string name="activity_sign_in_checkbox_remember_account">记住账号</string>
+    <string name="task_user_signin_task_login_error">登录失败</string>
+    
+    <!-- bar Activity -->
+    <string name="application_gps_error">检测GPS没有开启</string>
+    <string name="application_gps_already_opened">GPS已开启</string>
+    <string name="application_wifi_error">检查WI-FI没有链接</string>
+    <string name="application_wifi_already_opened">WI-FI已链接</string>
+    <string name="application_gprs_error">检查移动网络没有开启</string>
+    <string name="application_gprs_already_connection">移动网络已链接</string>
+    
+    <!-- custom pull to refresh -->
+    <string name="custom_pull_to_refresh_app_name">PullToRefreshTest</string>  
+    <string name="custom_pull_to_refresh_pull_to_refresh">下拉可以刷新</string>  
+    <string name="custom_pull_to_refresh_release_to_refresh">释放立即刷新</string>  
+    <string name="custom_pull_to_refresh_refreshing">正在刷新…</string>  
+    <string name="custom_pull_to_refresh_not_updated_yet">暂未更新过</string>  
+    <string name="custom_pull_to_refresh_updated_at">上次更新于%1$s前</string>  
+    <string name="custom_pull_to_refresh_updated_just_now">刚刚更新</string>  
+    <string name="custom_pull_to_refresh_time_error">时间有问题</string> 
+    <string name="custom_pull_to_refresh_minute">分钟</string>
+    <string name="custom_pull_to_refresh_hour">小时</string>
+    <string name="custom_pull_to_refresh_day">天</string>
+    <string name="custom_pull_to_refresh_month">个月</string>
+    <string name="custom_pull_to_refresh_year">年</string>
+    
+    <!-- custom list view find -->
+    <string name="custom_list_view_find_textview_path">路线:</string>
+    <string name="custom_list_view_find_textview_total">总计:</string>
+    <string name="custom_list_view_find_textview_go_off">出发:</string>
+    <string name="custom_list_view_find_textview_arrive">到达:</string>
+</resources>

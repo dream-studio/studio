@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:id="@+id/custom_listview_find_textview_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_find_listview_header_text_size"
+            />
+        
+        <TextView 
+            android:id="@+id/custom_listview_find_textview_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/custom_find_listview_header_text_size"
+            />
+        
+        <TextView 
+            android:id="@+id/custom_listview_find_textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/custom_find_listview_header_text_size"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        >
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_list_view_find_textview_path"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_mark_across"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/public_mark_across"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        >
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_list_view_find_textview_total"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        >
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_go_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_list_view_find_textview_go_off"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_go_off_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_list_view_find_textview_arrive"
+            android:layout_marginLeft="5dp"
+            />
+        	
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_arrive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        	<TextView 
+            android:id="@+id/custom_listview_find_textview_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />	
+        	
+    </RelativeLayout>
+    
+</LinearLayout>
