@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
 import com.dream.freightapp.app.R;
+import com.dream.freightapp.app.ui.tool.PreferencesTool;
 import com.dream.freightapp.app.ui.user.SignInActivity;
 
 public class GuideViewPagerAdapter extends PagerAdapter{
@@ -83,13 +84,16 @@ public class GuideViewPagerAdapter extends PagerAdapter{
      * method desc：设置已经引导过了，下次启动不用再次引导
      */
     private void setGuided() {
-        SharedPreferences preferences = activity.getSharedPreferences(
-                SHAREDPREFERENCES_NAME, Context.MODE_PRIVATE);
-        Editor editor = preferences.edit();
-        // 存入数据
-        editor.putBoolean("isFirstIn", false);
-        // 提交修改
-        editor.commit();
+//        SharedPreferences preferences = activity.getSharedPreferences(
+//                SHAREDPREFERENCES_NAME, Context.MODE_PRIVATE);
+//        Editor editor = preferences.edit();
+//        // 存入数据
+//        editor.putBoolean("isFirstIn", false);
+//        // 提交修改
+//        editor.commit();
+        
+        PreferencesTool.setSplashPage(false);
+        
     }
 
     // 判断是否由对象生成界面
