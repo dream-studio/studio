@@ -1,11 +1,9 @@
-package com.dream.freightapp.app.ui.tool;
+package com.dream.freightapp.app;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.dream.freightapp.app.FreightApplication;
-
-public class PreferencesTool {
+public class Preferences {
 
 	private final static int PREFERENCES_MODE = Context.MODE_PRIVATE;
 	public final static String PREFERENCES_USER = "user_preferences";// 用户级信息

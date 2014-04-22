@@ -30,10 +30,8 @@ public class GuideActivity extends BaseActivity implements OnPageChangeListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
-
         // 初始化页面
         initViews();
-
         // 初始化底部小点
         initDots();
     }

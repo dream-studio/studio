@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.dream.freightapp.app.R;
-import com.dream.freightapp.app.manage.user.SignInManage;
+import com.dream.freightapp.app.manage.User;
 import com.dream.freightapp.app.ui.BaseActivity;
 import com.dream.freightapp.app.ui.main.MainActivity;
 
@@ -23,7 +23,7 @@ public class SignInActivity extends BaseActivity {
 	Button signIn;
 	Button signUp;
 	CheckBox rememberAccount;
-	SignInManage signInManage = new SignInManage();
+	User signInManage = new User();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class SignInActivity extends BaseActivity {
 
 	private class SignInTask extends AsyncTask<Void, Integer, Boolean> {
 
-		SignInManage sginInManage = new SignInManage();
+		User sginInManage = new User();
 
 		@Override
 		protected void onPreExecute() {

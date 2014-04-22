@@ -1,20 +1,50 @@
-package com.dream.freightapp.app.manage.user;
+package com.dream.freightapp.app.manage;
 
+import android.content.ContentValues;
+import android.database.Cursor;
 import android.widget.Toast;
 
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.dream.freightapp.app.FreightApplication;
+import com.dream.freightapp.app.db.UserTable;
 import com.dream.freightapp.app.util.BaiduLocation;
 
-public class SignInManage {
+public class User {
 	public boolean validate(String account, String password) {
 
 		boolean flag = false;
+		
+//		ContentValues contentValues = new ContentValues();
+//		contentValues.put(UserTable.FIELD_ACCOUNT, account);
+//		contentValues.put(UserTable.FIELD_PASSWORD, password);
+//
+		
+//		UserTable userTable = new UserTable();
+//		userTable.open();
+//		Cursor cursor = userTable.fetch(contentValues);
+//		userTable.close();
+//		int IDIndex = cursor.getColumnIndex(UserTable.FIELD_PREMARY_KEY_ID);
+//		System.out.println(cursor.getInt(IDIndex));
+
 		if ("test".equals(account) && "123".equals(password)) {
 			flag = true;
+
 		}
 		return flag;
+	}
+
+	public boolean create() {
+//		ContentValues contentValues = new ContentValues();
+//		contentValues.put(UserTable.FIELD_ACCOUNT, "goffee");
+//		contentValues.put(UserTable.FIELD_PASSWORD, "123");
+//		contentValues.put(UserTable.FIELD_PHONE, "12345679");
+//
+//		UserTable userTable = new UserTable();
+//		userTable.open();
+//		userTable.create(contentValues);
+//		userTable.close();
+		return false;
 	}
 
 	public void startLocation() {

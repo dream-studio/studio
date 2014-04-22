@@ -14,8 +14,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
+import com.dream.freightapp.app.Preferences;
 import com.dream.freightapp.app.R;
-import com.dream.freightapp.app.ui.tool.PreferencesTool;
 import com.dream.freightapp.app.ui.user.SignInActivity;
 
 public class GuideViewPagerAdapter extends PagerAdapter{
@@ -92,7 +92,7 @@ public class GuideViewPagerAdapter extends PagerAdapter{
 //        // 提交修改
 //        editor.commit();
         
-        PreferencesTool.setSplashPage(false);
+        Preferences.setSplashPage(false);
         
     }
 
