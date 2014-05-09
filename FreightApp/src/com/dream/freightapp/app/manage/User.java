@@ -1,13 +1,10 @@
 package com.dream.freightapp.app.manage;
 
-import android.content.ContentValues;
-import android.database.Cursor;
 import android.widget.Toast;
 
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.dream.freightapp.app.FreightApplication;
-import com.dream.freightapp.app.db.UserTable;
 import com.dream.freightapp.app.util.BaiduLocation;
 
 public class User {
@@ -66,7 +63,7 @@ public class User {
 				sb.append(location.getLocType());
 				sb.append("\nLatitude(纬度) : ");
 				sb.append(location.getLatitude());
-				sb.append("\nLontitude(经典) : ");
+				sb.append("\nLontitude(经度) : ");
 				sb.append(location.getLongitude());
 				sb.append("\nRadius(半径) : ");
 				sb.append(location.getRadius());

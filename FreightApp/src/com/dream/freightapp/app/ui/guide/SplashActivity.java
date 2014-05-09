@@ -7,11 +7,10 @@ import android.os.Message;
 
 import com.dream.freightapp.app.Preferences;
 import com.dream.freightapp.app.R;
-import com.dream.freightapp.app.manage.User;
-import com.dream.freightapp.app.ui.BaseActivity;
+import com.dream.freightapp.app.ui.ActionBarActivity;
 import com.dream.freightapp.app.ui.user.SignInActivity;
 
-public class SplashActivity extends BaseActivity {
+public class SplashActivity extends ActionBarActivity {
 	// boolean isFirstIn = false;
 
 	private static final int GO_HOME = 1000;
@@ -82,5 +81,35 @@ public class SplashActivity extends BaseActivity {
 		Intent intent = new Intent(SplashActivity.this, GuideActivity.class);
 		SplashActivity.this.startActivity(intent);
 		SplashActivity.this.finish();
+	}
+
+	@Override
+	public boolean setDisplayShowHomeEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int setTitle() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean setHomeButtonEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int setIcon() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isShowActionBar() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

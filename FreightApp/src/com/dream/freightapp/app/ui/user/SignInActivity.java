@@ -1,5 +1,6 @@
 package com.dream.freightapp.app.ui.user;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -12,10 +13,9 @@ import android.widget.Toast;
 
 import com.dream.freightapp.app.R;
 import com.dream.freightapp.app.manage.User;
-import com.dream.freightapp.app.ui.BaseActivity;
 import com.dream.freightapp.app.ui.main.MainActivity;
 
-public class SignInActivity extends BaseActivity {
+public class SignInActivity extends Activity {
 	private static final String tag = "SignInActivity";
 
 	EditText account;
@@ -33,7 +33,9 @@ public class SignInActivity extends BaseActivity {
 		setContentView(R.layout.activity_sign_in);
 
 		account = (EditText) findViewById(R.id.activity_sign_in_edittext_account);
+		account.setText("test");
 		password = (EditText) findViewById(R.id.activity_sign_in_edittext_password);
+		password.setText("123");
 
 		signIn = (Button) findViewById(R.id.activity_sign_in_button_sign_in);
 		signUp = (Button) findViewById(R.id.activity_sign_in_button_sign_up);
