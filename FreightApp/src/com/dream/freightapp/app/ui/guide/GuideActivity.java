@@ -3,7 +3,6 @@ package com.dream.freightapp.app.ui.guide;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
@@ -102,7 +101,7 @@ public class GuideActivity extends ActionBarActivity implements OnPageChangeList
 	}
 
 	@Override
-	public boolean setDisplayShowHomeEnabled() {
+	public boolean isDisplayShowHomeEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -114,7 +113,7 @@ public class GuideActivity extends ActionBarActivity implements OnPageChangeList
 	}
 
 	@Override
-	public boolean setHomeButtonEnabled() {
+	public boolean isHomeButtonEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}

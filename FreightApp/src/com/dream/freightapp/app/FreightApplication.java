@@ -22,5 +22,4 @@ public class FreightApplication extends Application {
 		
 	}
 	
-	
 }

@@ -18,7 +18,7 @@ public class SystemSettingActivity extends ActionBarActivity {
 	}
 
 	@Override
-	public boolean setDisplayShowHomeEnabled() {
+	public boolean isDisplayShowHomeEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -30,7 +30,7 @@ public class SystemSettingActivity extends ActionBarActivity {
 	}
 
 	@Override
-	public boolean setHomeButtonEnabled() {
+	public boolean isHomeButtonEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}

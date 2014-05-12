@@ -18,6 +18,7 @@ public class SplashActivity extends ActionBarActivity {
 	// 延迟3秒
 	private static final long SPLASH_DELAY_MILLIS = 3000;
 
+	@SuppressWarnings("unused")
 	private static final String SHAREDPREFERENCES_NAME = "first_pref";
 
 	/**
@@ -84,7 +85,7 @@ public class SplashActivity extends ActionBarActivity {
 	}
 
 	@Override
-	public boolean setDisplayShowHomeEnabled() {
+	public boolean isDisplayShowHomeEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -96,7 +97,7 @@ public class SplashActivity extends ActionBarActivity {
 	}
 
 	@Override
-	public boolean setHomeButtonEnabled() {
+	public boolean isHomeButtonEnabled() {
 		// TODO Auto-generated method stub
 		return false;
 	}

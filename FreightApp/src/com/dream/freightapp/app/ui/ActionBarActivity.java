@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -26,12 +25,10 @@ public abstract class ActionBarActivity extends SherlockActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		Log.i(tag, "Start Create Activity!");
-
-		if (isShowActionBar()) {
-			initActionBar();
-		}
-
-		Log.i(tag, "Finish Init Action Bar!");
+		initActivitySet();
+		Log.i(tag, "Finish Init Activity Set!");
+		initActionBarSet();
+		Log.i(tag, "Finish Init Action Bar Set!");
 	}
 
 	@Override
@@ -45,31 +42,37 @@ public abstract class ActionBarActivity extends SherlockActivity {
 	/**
 	 * Init ActionBar
 	 */
-	private void initActionBar() {
-		getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-		getSupportActionBar().setDisplayShowCustomEnabled(true);
-		View customActionBarView = getLayoutInflater().inflate(
-				R.layout.custom_action_bar, null);
-		TextView actionBarTitle = (TextView) customActionBarView
-				.findViewById(R.id.action_bar_title);
+	private void initActionBarSet() {
+		if (isShowActionBar()) {
+			getSupportActionBar().setDisplayOptions(
+					ActionBar.DISPLAY_SHOW_CUSTOM);
+			getSupportActionBar().setDisplayShowCustomEnabled(true);
+			View customActionBarView = getLayoutInflater().inflate(
+					R.layout.custom_action_bar, null);
+			TextView actionBarTitle = (TextView) customActionBarView
+					.findViewById(R.id.action_bar_title);
 
-		actionBarTitle.setText(setTitle());
+			actionBarTitle.setText(setTitle());
 
-		LayoutParams lp = new LayoutParams(LayoutParams.WRAP_CONTENT,
-				LayoutParams.WRAP_CONTENT, Gravity.CENTER
-						| Gravity.CENTER_VERTICAL);
-		getSupportActionBar().setCustomView(customActionBarView, lp);
-		getSupportActionBar().setDisplayShowHomeEnabled(
-				setDisplayShowHomeEnabled());
-		getSupportActionBar().setHomeButtonEnabled(setHomeButtonEnabled());
+			LayoutParams lp = new LayoutParams(LayoutParams.WRAP_CONTENT,
+					LayoutParams.WRAP_CONTENT, Gravity.CENTER
+							| Gravity.CENTER_VERTICAL);
+			getSupportActionBar().setCustomView(customActionBarView, lp);
+			getSupportActionBar().setDisplayShowHomeEnabled(
+					isDisplayShowHomeEnabled());
+			getSupportActionBar().setHomeButtonEnabled(isHomeButtonEnabled());
 
-		if (setIcon() != 0) {
-			getSupportActionBar().setIcon(setIcon());
+			if (setIcon() != 0) {
+				getSupportActionBar().setIcon(setIcon());
+			} else {
+				getSupportActionBar().setIcon(R.drawable.ic_back);
+			}
+
+			getSupportActionBar().setDisplayShowCustomEnabled(true);
 		} else {
-			getSupportActionBar().setIcon(R.drawable.ic_back);
+			getSupportActionBar().hide();
 		}
 
-		getSupportActionBar().setDisplayShowCustomEnabled(true);
 	}
 
 	/**
@@ -90,14 +93,13 @@ public abstract class ActionBarActivity extends SherlockActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	@SuppressWarnings("unused")
-	private void initApplication() {
+	private void initActivitySet() {
 		// 取消title
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		// 设置全屏
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		// getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		// WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		// 竖屏
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -106,14 +108,14 @@ public abstract class ActionBarActivity extends SherlockActivity {
 		// setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 	}
 
-	public abstract boolean setDisplayShowHomeEnabled();
+	public abstract boolean isDisplayShowHomeEnabled();
 
-	public abstract int setTitle();
+	public abstract boolean isHomeButtonEnabled();
 
-	public abstract boolean setHomeButtonEnabled();
+	public abstract boolean isShowActionBar();
 
 	public abstract int setIcon();
 
-	public abstract boolean isShowActionBar();
+	public abstract int setTitle();
 
 }

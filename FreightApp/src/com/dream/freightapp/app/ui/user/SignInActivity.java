@@ -1,6 +1,5 @@
 package com.dream.freightapp.app.ui.user;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -13,9 +12,10 @@ import android.widget.Toast;
 
 import com.dream.freightapp.app.R;
 import com.dream.freightapp.app.manage.User;
+import com.dream.freightapp.app.ui.ActionBarActivity;
 import com.dream.freightapp.app.ui.main.MainActivity;
 
-public class SignInActivity extends Activity {
+public class SignInActivity extends ActionBarActivity {
 	private static final String tag = "SignInActivity";
 
 	EditText account;
@@ -104,5 +104,35 @@ public class SignInActivity extends Activity {
 						Toast.LENGTH_SHORT).show();
 			}
 		}
+	}
+
+	@Override
+	public boolean isDisplayShowHomeEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int setTitle() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isHomeButtonEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int setIcon() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isShowActionBar() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
